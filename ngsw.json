@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1760794939589,
+  "timestamp": 1760795126939,
   "index": "https://leogilardi6.github.io/cot/index.html",
   "assetGroups": [
     {
@@ -35,7 +35,7 @@
         "https://leogilardi6.github.io/cot/chunk-YMR2WTO6.js",
         "https://leogilardi6.github.io/cot/chunk-ZHAHION7.js",
         "https://leogilardi6.github.io/cot/index.html",
-        "https://leogilardi6.github.io/cot/main-MMNDWIKA.js",
+        "https://leogilardi6.github.io/cot/main-NOCZOPVQ.js",
         "https://leogilardi6.github.io/cot/manifest.webmanifest",
         "https://leogilardi6.github.io/cot/styles-PQVDB3GP.css"
       ],
@@ -200,8 +200,8 @@
     "https://leogilardi6.github.io/cot/icons/COT-512x512.png": "1769dd535ee1d0d19ecebc3bac6be2de4b5cef68",
     "https://leogilardi6.github.io/cot/icons/COT-72x72.png": "51e6d42487ca77a434b19738b54bcfcb0f630a3c",
     "https://leogilardi6.github.io/cot/icons/COT-96x96.png": "3cba6c98aec15d24f0eecee7bd754b7275aa5e4e",
-    "https://leogilardi6.github.io/cot/index.html": "27583e4cb059434d4bfab0715f55db6b1d6d22ff",
-    "https://leogilardi6.github.io/cot/main-MMNDWIKA.js": "bf962fd9700c856c4d997e580d2da4abb8909a0e",
+    "https://leogilardi6.github.io/cot/index.html": "ed307f1754df2c46af87cd8eef7cc5e51b07e7ca",
+    "https://leogilardi6.github.io/cot/main-NOCZOPVQ.js": "9bdc344c5894bd223ba6cf37fb39e28f26c851b1",
     "https://leogilardi6.github.io/cot/manifest.webmanifest": "241501f8c71e33c2a4072488014bc81689afd843",
     "https://leogilardi6.github.io/cot/media/bg_ponted-KEG3U7GH.png": "981ab3f24229fc1bfb20e0fab31a127570276d80",
     "https://leogilardi6.github.io/cot/media/contactenos-EH2ZGUTI.png": "6a60a64d466c284c530e63d56ec7fd0c6011df46",
