@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "predeploy": "ng build --configuration production --base-href=https://leogilardi6.github.io/COT/",
+    "deploy": "gh-pages -d dist/cot-website",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prettier": "prettier --write \"src/**/*.{ts,js,json,scss,html}\"",
@@ -53,6 +55,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.2.5",
-    "typescript": "~5.8.2"
+    "typescript": "~5.8.2",
+    "gh-pages": "^5.0.0"
   }
 }
