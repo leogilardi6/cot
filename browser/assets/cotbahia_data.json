@@ -1,0 +1,34 @@
+{
+  "index.php": {
+    "doctor-section1": {
+      "traumatologos": [
+        {
+          "name": "Dr. Martín Duhalde",
+          "specialty": "Ortopedia y Traumatología",
+          "treatments": [
+            "Tratamiento de artrosis Cadera y Rodilla",
+            "Injerto de médula ósea con Células Madre",
+            "Factores de Crecimiento Plaquetarios"
+          ],
+          "profile_url": "https://cotbahia.com.ar/duhalde.html"
+        },
+        {
+          "name": "Dr. Claudio Bast",
+          "specialty": "Esp. Ortopedia y Traumatología",
+          "treatments": ["Cirugía Artroscópica", "Cirugía de Cadera y Rodilla"],
+          "profile_url": "https://cotbahia.com.ar/bast.html"
+        }
+      ],
+      "appointment_link": "https://cotbahia.com.ar/Turnos/T_Solicitar.php",
+      "center_info": "Ahora Bahía Blanca cuenta con un centro de atención traumatológica de Excelencia. Un nuevo concepto en cuanto a atención médica se refiere. Un equipo de reconocidos Especialistas en Ortopedia y Traumatología ofrece a sus pacientes Respuestas a los distintos problemas clínico-quirúrgicos en el marco de un servicio integral dentro de la especialidad. Nuestro objetivo primordial es brindar variedad y calidad de servicios médico asistenciales relacionados con la salud, poniendo especial énfasis en la prevención y tratamiento de la patología traumatológica. Atendemos obras sociales varias. Brindamos un servicio de atención integral, para mayor comodidad del paciente, donde contamos con: Equipo de Radiología Digital, Equipo de estudio de la marcha FootScan y Plantillas, Servicios de Kinesiología, Servicio de Terapia Ocupacional. Por esto y mucho más, COT - Centro de Ortopedia y Traumatología representa la tranquilidad de estar en buenas manos.",
+      "services": [
+        "Equipo de Radiología Digital",
+        "Equipo de estudio de la marcha FootScan y Plantillas",
+        "Servicios de Kinesiología",
+        "Servicio de Terapia Ocupacional"
+      ],
+      "directorio": ["Dr. Martin Duhalde"],
+      "logo": "images/logocot.png"
+    }
+  }
+}

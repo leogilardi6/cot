@@ -1,0 +1,1 @@
+import{Qb as a,cb as i,xb as o,yb as n}from"./chunk-Q3WKBXV6.js";var s=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=i({type:e,selectors:[["app-noticias"]],decls:2,vars:0,template:function(t,p){t&1&&(o(0,"p"),a(1,"Noticias funcionando"),n())},encapsulation:2})};export{s as Noticias};
