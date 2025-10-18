@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cot-website": {
+    "cot": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cot-website:build:production"
+              "buildTarget": "cot:build:production"
             },
             "development": {
-              "buildTarget": "cot-website:build:development"
+              "buildTarget": "cot:build:development"
             }
           },
           "defaultConfiguration": "development"

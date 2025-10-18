@@ -1,12 +1,12 @@
 {
-  "name": "cot-website",
+  "name": "cot",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "predeploy": "ng build --configuration production --base-href=https://leogilardi6.github.io/COT/",
-    "deploy": "gh-pages -d dist/cot-website",
+    "deploy": "gh-pages -d dist/cot",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prettier": "prettier --write \"src/**/*.{ts,js,json,scss,html}\"",
