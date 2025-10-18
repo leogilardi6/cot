@@ -43,6 +43,10 @@
                   "maximumError": "2mb"
                 }
               ],
+              "outputPath": {
+                "base": "dist/cot",
+                "browser": ""
+              },
               "outputHashing": "all",
               "serviceWorker": "ngsw-config.json"
             },
