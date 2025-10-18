@@ -1,0 +1,86 @@
+.book-appointment-fab {
+  align-items: center;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 60px;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  right: 30px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 60px;
+  z-index: 1000;
+
+  &.whatsapp {
+    bottom: 100px;
+    background-color: var(--whatsapp-green);
+  }
+  .sacar-turno {
+    text-decoration: none;
+    color: var(--font-base-color);
+  }
+  .social-icon {
+    text-decoration: none;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+  }
+
+  .fab-text {
+    color: white;
+    display: block;
+    margin-left: 8px;
+    opacity: 1;
+    transform: translateX(0);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .fab-content {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 16px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .fab-icon {
+    height: 24px;
+    left: auto;
+    margin: 0;
+    object-fit: contain;
+    position: static;
+    width: 24px;
+    transform: none;
+    transition:
+      left 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .item .fab-text {
+    display: none;
+    margin-left: 8px;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  &:hover {
+    align-items: flex-start;
+    border-radius: 20px;
+    width: 180px;
+    &.whatsapp {
+      width: 130px;
+    }
+    .item .fab-text {
+      display: block;
+    }
+  }
+}

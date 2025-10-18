@@ -1,0 +1,56 @@
+.institucional-container {
+  max-width: 1000px;
+  justify-self: center;
+  padding: 50px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 36px 24px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 24px 16px;
+  }
+  .title {
+    margin-bottom: 30px;
+  }
+  .content {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    .image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: grey;
+    }
+    &__content {
+      margin-top: 16px;
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      .item {
+        text-indent: 16px;
+        margin-bottom: 8px;
+        color: rgb(87, 87, 87);
+      }
+    }
+  }
+  h2.information__title {
+    margin-top: 16px;
+    font-size: 1.5rem;
+  }
+  .information {
+    margin-top: 30px;
+    .mat-accordion .mat-expansion-panel {
+      border-radius: 3px;
+    }
+    &__title {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+    &__content {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      margin: 8px 0;
+      color: rgb(87, 87, 87);
+    }
+  }
+}

@@ -1,0 +1,114 @@
+<section class="kinesiologia-section no-select">
+  <h1 class="cot-title with-shadow">Kinesiología</h1>
+  <div class="kinesiologia-content">
+    <p>
+      En COT, la sección de Kinesiología está dedicada a brindar atención personalizada y de alta
+      calidad para la rehabilitación y el bienestar físico de nuestros pacientes. Nuestro equipo de
+      profesionales utiliza técnicas modernas y un enfoque integral para asegurar la recuperación
+      funcional y mejorar la calidad de vida.
+    </p>
+    <div class="kinesiologia-detalle">
+      <h2 class="detalle-title cot-title with-shadow">Rehabilitación avanzada y Método Busquet</h2>
+      <p>
+        Nuestro servicio se destaca por la formación continua y la especialización en rehabilitación
+        traumatológica y deportiva. Utilizamos herramientas avanzadas para abordar las necesidades
+        específicas de cada paciente, integrando el
+        <strong>Método Busquet (Cadenas Musculares)</strong>, un enfoque innovador que permite
+        identificar las causas de tensiones, restricciones y dolencias corporales mediante una
+        evaluación integral (estática y dinámica).
+      </p>
+      <p>
+        El objetivo del Método Busquet es trabajar sobre las causas y consecuencias de las
+        limitaciones del cuerpo que alteran su equilibrio natural. Para lograrlo, empleamos posturas
+        de relajación y técnicas de reprogramación de las cadenas musculares afectadas, promoviendo
+        una recuperación efectiva y sostenible.
+      </p>
+      <p>
+        En COT, estamos comprometidos con brindar un abordaje personalizado y profesional, ayudando
+        a nuestros pacientes a recuperar su bienestar y optimizar su calidad de vida.
+      </p>
+    </div>
+    <div class="servicios-cards-container">
+      <h2 class="cot-title with-shadow title">Servicios de Kinesiología</h2>
+      <div class="servicios-cards-list">
+        <mat-card class="servicio-card">
+          <mat-card-header>
+            <mat-card-title>
+              <span class="servicio-icon material-icons">search</span>
+              Evaluación individualizada y seguimiento continuo</mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <p>Valoración profesional y monitoreo personalizado para cada paciente.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="servicio-card">
+          <mat-card-header>
+            <mat-card-title>
+              <span class="servicio-icon material-icons">healing</span> Tratamientos personalizados
+              para cada patología</mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Planes de rehabilitación adaptados a las necesidades y diagnóstico de cada persona.
+            </p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="servicio-card">
+          <mat-card-header>
+            <mat-card-title>
+              <span class="servicio-icon material-icons">construction</span> Equipamiento moderno y
+              ambiente confortable</mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <p>Instalaciones y tecnología de vanguardia para una recuperación óptima.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="servicio-card">
+          <mat-card-header>
+            <mat-card-title>
+              <span class="servicio-icon material-icons">groups</span> Trabajo interdisciplinario
+              con médicos y especialistas</mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Colaboración activa con profesionales de distintas áreas para el mejor abordaje
+              terapéutico.
+            </p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="servicio-card">
+          <mat-card-header>
+            <mat-card-title>
+              <span class="servicio-icon material-icons">volunteer_activism</span> Compromiso con la
+              excelencia y el trato humano</mat-card-title
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <p>Atención cálida, ética y profesional en cada etapa del tratamiento.</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="kinesiologos-galeria">
+      <h2 class="cot-title with-shadow title">Nuestros Kinesiologos</h2>
+      <!-- Aquí se mostrarán las imágenes de los kinesiologos -->
+      @for (kinesiologo of KINESIOLOGIA_DATA; track kinesiologo.nombre) {
+        <div class="kinesiologo-item">
+          <img
+            [src]="kinesiologo.imagen"
+            [alt]="kinesiologo.nombre"
+            title="{{ kinesiologo.titulo }}{{ kinesiologo.nombre }}"
+            class="kinesiologo-img"
+          />
+          <div class="cot-title with-shadow kinesiologo-nombre">
+            {{ kinesiologo.titulo }}{{ kinesiologo.nombre }}
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

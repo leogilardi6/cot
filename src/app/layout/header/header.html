@@ -1,0 +1,62 @@
+<section
+  class="simple-container"
+  [class.sticky]="isSticky()"
+  [class.non-visible]="isNonVisible()"
+  [class.home]="isHome()"
+>
+  <nav class="navbar">
+    <!-- isSticky() ? '/assets/images/logo/cot_logo_blue.jpg' : '/assets/images/logo/cot_logo.png' -->
+    <img
+      class="logo"
+      routerLink="/"
+      [src]="'/assets/images/logo/cot_logo_blue_white.png'"
+      alt="COT Logo"
+    />
+    @if (!isMobileMenuOpen()) {
+      <div class="nav-buttons">
+        <button matButton="filled" routerLink="/">Inicio</button>
+        <button matButton="filled" routerLink="/institucional">Institucional</button>
+        <button matButton="filled" routerLink="/especialidades">Especialidades</button>
+        <button matButton="filled" routerLink="/personal">Personal</button>
+        <button matButton="filled" routerLink="/servicios">Estudios y Servicios</button>
+        <!-- <button matButton="filled" routerLink="/noticias">Noticias</button> -->
+        <button matButton="filled" routerLink="/contacto">Contacto</button>
+      </div>
+    }
+
+    <div class="mobile-menu-icon">
+      <button mat-icon-button (click)="toggleMobileMenu()">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+    @if (isMobileMenuOpen()) {
+      <div class="mobile-backdrop" (click)="toggleMobileMenu()"></div>
+      <div class="mobile-nav-menu">
+        <button matButton="filled" routerLink="/" (click)="toggleMobileMenu()">Inicio</button>
+        <button matButton="filled" routerLink="/institucional" (click)="toggleMobileMenu()">
+          Quiénes Somos
+        </button>
+        <button matButton="filled" routerLink="/especialidades" (click)="toggleMobileMenu()">
+          Especialidades
+        </button>
+        <button matButton="filled" routerLink="/personal" (click)="toggleMobileMenu()">
+          Personal
+        </button>
+        <button matButton="filled" routerLink="/servicios" (click)="toggleMobileMenu()">
+          Estudios y Servicios
+        </button>
+        <!-- <button matButton="filled" routerLink="/noticias" (click)="toggleMobileMenu()">
+          Noticias
+        </button> -->
+        <button matButton="filled" routerLink="/contacto" (click)="toggleMobileMenu()">
+          Contacto
+        </button>
+      </div>
+    }
+    <!-- <div class="turno__button">
+      <button matButton="filled" (click)="open('https://paciente.sigemed.com.ar/portal/Cot')">
+        Solicitar Turno
+      </button>
+    </div> -->
+  </nav>
+</section>

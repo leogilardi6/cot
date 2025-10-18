@@ -1,0 +1,43 @@
+<section class="patologias-section no-select" (cdkObserveContent)="onSectionInView()">
+  <div class="title-container">
+    <div class="title-container__text">
+      <h2 class="patologias-section__title with-shadow no-select">Patologías que tratamos</h2>
+    </div>
+    <div class="title-container__content">
+      <div class="content__intro">
+        En COT Bahía Blanca abordamos una amplia variedad de patologías traumatológicas y
+        ortopédicas, utilizando técnicas avanzadas y un enfoque integral para la recuperación y el
+        bienestar de nuestros pacientes. <br />
+        Atendemos patologías de la Mano, Muñeca, Brazo, Codo, Hombro, Columna, Rodilla, Pierna,
+        Tobillo y Pie, de acuerdo con Protocolos establecidos y reconocidos de tratamientos médicos
+        y de rehabilitación.
+      </div>
+      <mat-card class="image__card">
+        <img
+          src="assets/images/patologias/patologias_home.jpeg"
+          alt="Patologías que tratamos en COT"
+        />
+      </mat-card>
+    </div>
+  </div>
+  <div class="patologias-section__list">
+    <div class="container-list">
+      @for (patologia of patologias; track patologia.title) {
+        <mat-card class="list__card">
+          <mat-card-header>
+            <img
+              class="patologia-icon"
+              [src]="patologia.image"
+              [alt]="patologia.title"
+              [title]="patologia.title"
+            />
+            <span class="patologia-title no-select">{{ patologia.title }}</span>
+          </mat-card-header>
+          <!-- <mat-card-content>
+        <p>{{ patologia.description }}</p>
+      </mat-card-content> -->
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,94 @@
+<section class="personal-section no-select">
+  <div class="title-section">
+    <h1 class="cot-title with-shadow">Nuestros Médicos</h1>
+    <p class="subtitle">
+      El equipo médico del Centro de Ortopedia y Traumatología (COT) está integrado por
+      especialistas en ortopedia, traumatología y cirugía reconstructiva, con amplia experiencia en
+      el diagnóstico y tratamiento de lesiones del aparato locomotor, incluyendo miembro superior,
+      inferior y columna vertebral.
+    </p>
+  </div>
+  <div class="personal-container">
+    <h2 class="cot-title with-shadow">Equipo Médico y Especialistas</h2>
+    <div class="personal-list">
+      @for (medico of medicos(); track medico.id) {
+        <mat-card class="medico-list-card">
+          <div class="medico-list-content">
+            <img [src]="medico.imagen" alt="{{ medico.nombre }}" class="miniatura-personal" />
+            <div class="medico-list-left">
+              <h2>{{ medico.titulo }} {{ medico.nombre }}</h2>
+              <h4>{{ medico.especialidad }}</h4>
+            </div>
+            <div class="medico-list-right">
+              <button mat-button color="primary" [routerLink]="['./', medico.nombre]">
+                Más información
+              </button>
+            </div>
+          </div>
+        </mat-card>
+      }
+    </div>
+  </div>
+  <br />
+
+  <!-- Sección de Personal No Médico -->
+  <div class="personal-container">
+    <h2 class="cot-title with-shadow">Kinesiología</h2>
+    <div class="personal-list">
+      @for (kinesiologo of kinesiologia(); track kinesiologo.id) {
+        <mat-card class="medico-list-card">
+          <div class="medico-list-content">
+            <img
+              [src]="kinesiologo.imagen"
+              alt="{{ kinesiologo.nombre }}"
+              class="miniatura-personal"
+            />
+            <div class="medico-list-left">
+              <h2>{{ kinesiologo.titulo }} {{ kinesiologo.nombre }}</h2>
+              <h4>{{ kinesiologo.especialidad }}</h4>
+            </div>
+            <div class="medico-list-right">
+              <button mat-button color="primary" [routerLink]="['./', kinesiologo.nombre]">
+                Más información
+              </button>
+            </div>
+          </div>
+        </mat-card>
+      }
+    </div>
+  </div>
+  <!-- Sección de Personal No Médico -->
+  <div class="personal-container">
+    <h2 class="cot-title with-shadow">Diagnóstico por Imágenes</h2>
+    <div class="personal-list">
+      @for (diagnosta of diagnosticos(); track diagnosta.id) {
+        <mat-card class="medico-list-card">
+          <div class="medico-list-content">
+            <img [src]="diagnosta.imagen" alt="{{ diagnosta.nombre }}" class="miniatura-personal" />
+            <div class="medico-list-left">
+              <h2>{{ diagnosta.titulo }} {{ diagnosta.nombre }}</h2>
+              <h4>{{ diagnosta.especialidad }}</h4>
+            </div>
+          </div>
+        </mat-card>
+      }
+    </div>
+  </div>
+  <!-- Sección de Personal No Médico -->
+  <div class="personal-container">
+    <h2 class="cot-title with-shadow">Coordinación Institucional</h2>
+    <div class="personal-list">
+      @for (persona of personal(); track persona.id) {
+        <mat-card class="medico-list-card">
+          <div class="medico-list-content">
+            <img [src]="persona.imagen" alt="{{ persona.nombre }}" class="miniatura-personal" />
+            <div class="medico-list-left">
+              <h2>{{ persona.nombre }}</h2>
+              <h4>{{ persona.rol }}</h4>
+            </div>
+          </div>
+        </mat-card>
+      }
+    </div>
+  </div>
+</section>

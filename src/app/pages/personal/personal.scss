@@ -1,0 +1,149 @@
+// ...existing code...
+@media screen and (max-width: 1024px) {
+  .personal-section {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+@media (max-width: 768px) {
+  .personal-section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    .personal-list {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+    .medico-list-card {
+      width: 47%;
+    }
+    .medico-list-left {
+      align-items: center !important;
+      text-align: center;
+      margin: 12px 0;
+      h2 {
+        margin-bottom: 16px !important;
+      }
+    }
+    .personal-container .medico-list-content {
+      flex-direction: column;
+      min-height: 300px;
+    }
+  }
+  .medico-list-content {
+    .miniatura-personal {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .personal-section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    .personal-list {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+    .medico-list-card {
+      width: 100%;
+    }
+
+    .personal-container .medico-list-content {
+      flex-direction: column;
+      min-height: fit-content;
+    }
+  }
+}
+.miniatura-personal {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  box-shadow: 0 2px 8px #0001;
+  background: var(--background-card);
+}
+.personal-section {
+  padding: 48px 0;
+  max-width: 1000px;
+  justify-self: center;
+  h1 {
+    margin-bottom: 32px;
+    text-align: start;
+  }
+  .title-section p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--gray-light);
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  .personal-container {
+    margin-top: 40px;
+    .personal-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .medico-list-card {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      min-height: 100px;
+      padding: 0;
+      margin: 0;
+    }
+    .medico-list-content {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px;
+    }
+    .medico-list-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      h2 {
+        font-size: 1.3rem;
+        color: var(--title-color);
+        margin-bottom: 6px;
+      }
+      h4 {
+        font-size: 1rem;
+        color: var(--blue-accent);
+        margin-bottom: 0;
+      }
+    }
+    .medico-list-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 120px;
+      button {
+        background: var(--title-color);
+        color: var(--font-base-color);
+        border-radius: 4px;
+        padding: 8px 20px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: var(--blue-accent);
+      }
+    }
+  }
+}

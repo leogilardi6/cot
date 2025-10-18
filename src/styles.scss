@@ -1,0 +1,107 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --simple-container-height: 140px;
+  --carousel-height: 500px;
+  --footer-limonero-icono: 100px;
+  // --site-background: #e6e6e6;
+  --site-background: white;
+  --title-color: #00417e;
+  --base-color: #0c2b4d;
+  --font-base-color: white;
+  --gradient-1st-color: #0c2b4dce;
+  --gradient-2nd-color: #0a315ace;
+  --gradient-3rd-color: #08386bce;
+  --info-rapida-light: #034b8f;
+  --info-rapida-dark: #02406f;
+  --whatsapp-green: #128c7e;
+  --material-blue: #1976d2;
+  --material-blue-dark: #1565c0;
+  --gray-dark: #333;
+  --gray-medium: #666;
+  --gray-light: #222;
+  --whatsapp-button: #009742;
+  --error-red: #f44336;
+  --border-light: #e6e6e6;
+  --border-medium: #e0e7ef;
+  --border-blue: #b3c6e0;
+  --border-gray: #e5e5e5;
+  --background-info: #f8f9fa;
+  --background-card: #fafdff;
+  --background-section: #f7fafd;
+  --background-medico: #f5faff;
+  --background-service: #e6f0fa;
+  --service-blue: #0357a5;
+  --service-blue-light: #0357a511;
+  --service-blue-medium: #0357a533;
+  --blue-accent: #0071db;
+}
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  margin: 0;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+.with-shadow {
+  text-shadow: 2px 2px #0000001f;
+}
+
+.no-select {
+  -webkit-user-select: none; // Safari support
+  user-select: none;
+  cursor: default;
+}
+
+.cot-title {
+  color: var(--title-color);
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.bg-patron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: 1680px;
+  background-image: url('./assets/images/bg_ponted.png');
+  background-repeat: repeat;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.7;
+}

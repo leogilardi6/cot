@@ -1,0 +1,22 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { QuienesSomos } from './institucional';
+
+describe('QuienesSomos', () => {
+  let component: QuienesSomos;
+  let fixture: ComponentFixture<QuienesSomos>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [QuienesSomos],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(QuienesSomos);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

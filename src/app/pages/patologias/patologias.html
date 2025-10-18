@@ -1,0 +1,25 @@
+<div class="patologias-container no-select">
+  <h1 class="with-shadow cot-title">Patologías</h1>
+  @for (patologia of patologias; track patologia.id) {
+    <section class="patologia-section" id="{{ patologia.id }}">
+      <div class="patologia-header">
+        <div class="patologia-header__text">
+          <h2 class="patologia-title with-shadow">{{ patologia.grupo }}</h2>
+        </div>
+      </div>
+      @if (patologia.subsecciones) {
+        <div class="patologia-content">
+          @for (subseccion of patologia.subsecciones; track subseccion.titulo) {
+            <mat-card class="subseccion-card" (click)="navigate(patologia.id, subseccion.id)">
+              <mat-card-header>
+                <mat-card-title class="subseccion-title with-shadow">{{
+                  subseccion.titulo
+                }}</mat-card-title>
+              </mat-card-header>
+            </mat-card>
+          }
+        </div>
+      }
+    </section>
+  }
+</div>

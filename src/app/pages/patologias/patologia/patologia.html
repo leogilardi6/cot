@@ -1,0 +1,110 @@
+@let patologia = selectedPatologiaRel();
+@if (patologia) {
+  <div class="patologia-container no-select">
+    <header class="patologia-header">
+      <h1 class="cot-title with-shadow">{{ patologia!.titulo }}</h1>
+      <p class="introduccion">{{ patologia!.introduccion }}</p>
+    </header>
+    <div class="patologia-info">
+      <div class="patologia-content">
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.descripcion.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.descripcion.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.descripcion.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.sintomas.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.sintomas.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.sintomas.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.causas.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.causas.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.causas.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.diagnostico.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.diagnostico.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.diagnostico.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.tratamiento.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.tratamiento.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.tratamiento.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.prevencion.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.prevencion.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.prevencion.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.pronostico.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.pronostico.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.pronostico.contenido }}</div>
+        </section>
+
+        <section class="seccion">
+          <h2 class="cot-title with-shadow">{{ patologia!.secciones.conclusion.titulo }}</h2>
+          <p class="descripcion-seccion">
+            {{ patologia!.secciones.conclusion.descripcion }}
+          </p>
+          <div class="contenido">{{ patologia!.secciones.conclusion.contenido }}</div>
+        </section>
+
+        @if (patologia!.faqs?.length) {
+          <section class="seccion faqs">
+            <h2 class="cot-title with-shadow">Preguntas Frecuentes</h2>
+            <div class="faq-list">
+              @for (faq of patologia!.faqs; track faq.pregunta) {
+                <div class="faq-item">
+                  <h3 class="pregunta">{{ faq.pregunta }}</h3>
+                  <p class="respuesta">{{ faq.respuesta }}</p>
+                </div>
+              }
+            </div>
+          </section>
+        }
+      </div>
+      <div class="patologia-image">
+        @if (patologia!.imagenes && patologia!.imagenes.length) {
+          <section class="seccion">
+            <div class="imagenes-container">
+              @for (img of patologia!.imagenes; track img) {
+                <img
+                  [src]="img"
+                  alt="Imagen relacionada con {{ patologia!.titulo }}"
+                  class="patologia-img"
+                />
+              }
+            </div>
+          </section>
+        }
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="no-patologia">
+    <h2 class="cot-title with-shadow">Patología no encontrada</h2>
+    <p>No se pudo encontrar la información de la patología solicitada.</p>
+  </div>
+}

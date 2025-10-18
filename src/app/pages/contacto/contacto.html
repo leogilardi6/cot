@@ -1,0 +1,91 @@
+<div class="contacto-container">
+  <div class="contacto-flex no-select">
+    <div class="contacto-img">
+      <img src="assets/images/contactenos/contacto.png" alt="Contacto" />
+    </div>
+    <div class="contacto-form">
+      <div class="header">
+        <mat-icon class="header-icon">contact_mail</mat-icon>
+        <h2>Contacto</h2>
+        <p class="subtitle">
+          Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.
+        </p>
+      </div>
+      <form [formGroup]="contactoForm">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput type="text" formControlName="nombre" required />
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error *ngIf="contactoForm.get('nombre')?.hasError('required')">
+            El nombre es obligatorio
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Mensaje</mat-label>
+          <textarea
+            matInput
+            rows="5"
+            formControlName="mensaje"
+            required
+            placeholder="Cuéntanos cómo podemos ayudarte..."
+          ></textarea>
+          <mat-icon matPrefix>message</mat-icon>
+          <mat-error *ngIf="contactoForm.get('mensaje')?.hasError('required')">
+            El mensaje es obligatorio
+          </mat-error>
+        </mat-form-field>
+        <div class="acciones">
+          <button
+            mat-raised-button
+            color="accent"
+            type="button"
+            (click)="abrirWhatsApp()"
+            class="whatsapp-button"
+            [disabled]="!contactoForm.valid"
+          >
+            <img src="assets/images/social/whatsapp.png" alt="Whatsapp" class="social-icon" />
+            Enviar por WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <app-turno-section />
+
+  <!-- <mat-divider></mat-divider> -->
+
+  <!-- <div class="contact-info">
+    <h3 class="no-select">Información de Contacto</h3>
+    <div class="info-grid">
+      <div class="info-item">
+        <mat-icon>location_on</mat-icon>
+        <div>
+          <strong>Dirección</strong>
+          <p>Terrada 1534, Bahía Blanca</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <mat-icon>phone</mat-icon>
+        <div>
+          <strong>Teléfono</strong>
+          <p>2914079520</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <mat-icon>email</mat-icon>
+        <div>
+          <strong>Email</strong>
+          <p>info&#64;cotbahia.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <mat-icon>schedule</mat-icon>
+        <div>
+          <strong>Horarios</strong>
+          <p>Lunes a Viernes: 09:00 a 19:00 hs</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>

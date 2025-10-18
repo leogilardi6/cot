@@ -1,0 +1,116 @@
+@media (max-width: 1024px) {
+  .contactenos-content {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+  }
+  .contactenos-content iframe {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    height: 350px !important;
+    margin: 0 auto;
+    border-radius: 0;
+    display: block;
+  }
+  .info-contacto {
+    padding: 20px 0;
+    height: fit-content;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    max-width: 100vw;
+    height: auto;
+    .info-text {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+.contactenos-container {
+  height: 550px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../../assets/images/contactenos/contactenos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .contactenos-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    .info {
+      &-contacto {
+        height: 450px;
+        width: 250px;
+        background-color: var(--base-color);
+        color: var(--font-base-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+
+          a {
+            transition: transform 0.2s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            .social-icon {
+              width: 36px;
+              height: 36px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      &-title,
+      &-text {
+        font-size: 1rem;
+      }
+      &-icon {
+        height: 60px;
+        width: 60px;
+        border: 1px solid var(--font-base-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        .social-icon {
+          font-size: 40px;
+          width: 40px;
+          height: 40px;
+          margin-top: 2px;
+          margin-left: 2px;
+        }
+      }
+      &-text {
+        width: 80%;
+      }
+    }
+  }
+}

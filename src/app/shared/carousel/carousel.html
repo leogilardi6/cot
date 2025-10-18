@@ -1,0 +1,9 @@
+<section class="carousel-container">
+  @if (images().length > 0) {
+    @for (image of images(); let i = $index; track image.url) {
+      <div class="carousel-slide" [class.active]="i === currentIndex()">
+        <img [src]="image.url" [alt]="image.alt || 'Imagen del carrusel'" />
+      </div>
+    }
+  }
+</section>

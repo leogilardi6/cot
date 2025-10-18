@@ -1,0 +1,20 @@
+<section class="servicios-section">
+  <h2 class="servicios-section__title with-shadow no-select">Servicios</h2>
+  <div class="servicios-section__list">
+    @for (servicio of servicios; let i = $index; track servicio.image) {
+      <mat-card
+        class="servicio-card"
+        [ngStyle]="{
+          'background-image': 'url(' + servicio.image + ')',
+          backgroundColor: servicio.backgroundcolor,
+        }"
+      >
+        <!-- <div class="servicio-card__overlay">
+        <mat-card-content>
+          <p>{{ servicio.description }}</p>
+        </mat-card-content>
+      </div> -->
+      </mat-card>
+    }
+  </div>
+</section>

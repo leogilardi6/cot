@@ -1,0 +1,65 @@
+.patologias-container {
+  max-width: 1100px;
+  width: 100%;
+  justify-self: center;
+  padding: 48px 24px;
+}
+.patologia-section {
+  margin-bottom: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.patologia-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+
+  &__text {
+    flex: 1;
+    h2.patologia-title {
+      font-size: 1.5rem;
+      color: var(--title-color);
+      margin-bottom: 8px;
+    }
+    p.patologia-intro {
+      font-size: 1rem;
+      color: var(--title-color);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.patologia-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media screen and (max-width: 350px) {
+  .subseccion-card {
+    min-width: fit-content !important;
+    min-width: -webkit-fill-available !important;
+    .subseccion-title {
+      font-size: 1rem;
+    }
+  }
+}
+
+.subseccion-card {
+  width: 48%;
+  min-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  min-height: 80px;
+  background: #fff;
+}
+
+.subseccion-title {
+  font-size: 1.1rem;
+  color: var(--blue-accent);
+  font-weight: 600;
+}

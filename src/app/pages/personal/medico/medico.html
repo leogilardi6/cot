@@ -1,0 +1,150 @@
+@if (medico) {
+  <mat-card class="medico-card">
+    <div class="medico-header-flex">
+      <div class="medico-nombre-info">
+        <mat-card-title>
+          <h1 class="medico-nombre-info-name cot-title with-shadow">
+            <strong>{{ medico.titulo }} {{ medico.nombre }}</strong>
+          </h1>
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{ medico.especialidad }}
+          @if (medico.matriculaN) {
+            <span class="matricula"> Matricula Nacional {{ medico.matriculaN }}</span>
+          }
+
+          @if (medico.matriculaP) {
+            <span class="matricula"> Matricula Provincial {{ medico.matriculaP }}</span>
+          }
+        </mat-card-subtitle>
+      </div>
+      <div class="medico-foto">
+        <img
+          mat-card-image
+          [src]="medico.imagen"
+          alt="Foto de {{ medico.nombre }}"
+          class="medico-img"
+        />
+      </div>
+    </div>
+    <div class="medico-container-flex">
+      <div class="medico-info">
+        @if (medico.presentacion) {
+          <div class="medico-detail">
+            <div class="descripcion" [innerHTML]="medico.presentacion"></div>
+          </div>
+        }
+
+        @if (medico.formacionAcademica) {
+          <div class="medico-detail">
+            <h2 class="cot-title with-shadow">Formación académica:</h2>
+            <div class="medico-listado">
+              @for (f of medico.formacionAcademica; track $index) {
+                <div>
+                  <strong>{{ f.titulo }}</strong>
+                  @if (f.institucion) {
+                    <span>, {{ f.institucion }}</span>
+                  }
+                  @if (f.rol) {
+                    <span> ({{ f.rol }})</span>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        @if (medico.especialidades && medico.especialidades.length) {
+          <div class="medico-detail">
+            <h2 class="cot-title with-shadow">Especialidades:</h2>
+            <div class="medico-listado">
+              @for (esp of medico.especialidades; track $index) {
+                <div>
+                  {{ esp }}
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        @if (medico.experiencia && medico.experiencia.length) {
+          <div class="medico-detail">
+            <h2 class="cot-title with-shadow">Trayectoria:</h2>
+            <div class="medico-listado">
+              @for (exp of medico.experiencia; track $index) {
+                <div>
+                  <strong>{{ exp.rol }}</strong>
+                  @if (exp.institucion) {
+                    <span>, {{ exp.institucion }}</span>
+                  }
+                  @if (exp.ubicacion) {
+                    <span> - {{ exp.ubicacion }}</span>
+                  }
+                  @if (exp.supervisor) {
+                    <span> Supervisor: {{ exp.supervisor }}</span>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        @if (medico.capacitaciones && medico.capacitaciones.length) {
+          <div class="medico-detail">
+            <h2 class="cot-title with-shadow">Capacitaciones:</h2>
+            <div class="medico-listado">
+              @for (cap of medico.capacitaciones; track $index) {
+                <div>
+                  <strong>{{ cap.titulo }}</strong>
+                  @if (cap.institucion) {
+                    <span>, {{ cap.institucion }}</span>
+                  }
+                  @if (cap.anio) {
+                    <span> - {{ cap.anio }}</span>
+                  }
+                  @if (cap.categoria) {
+                    <span> - {{ cap.categoria }}</span>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+
+        @if (medico.redesSociales) {
+          <div class="medico-detail">
+            <h2 class="cot-title with-shadow">Redes Sociales:</h2>
+            <div class="redes">
+              @if (medico.redesSociales.instagram) {
+                <span>
+                  <a href="{{ medico.redesSociales.instagram }}" target="_blank">
+                    <img
+                      src="assets/images/social/instagram-logo.png"
+                      alt="Instagram"
+                      class="social-logo"
+                    />
+                  </a>
+                </span>
+              }
+              @if (medico.redesSociales.facebook) {
+                <span>
+                  <a href="{{ medico.redesSociales.facebook }}" target="_blank">
+                    <img
+                      src="assets/images/social/facebook-logo.png"
+                      alt="Facebook"
+                      class="social-logo"
+                    />
+                  </a>
+                </span>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </mat-card>
+} @else {
+  <mat-card>
+    <mat-card-title>Médico no encontrado</mat-card-title>
+  </mat-card>
+}

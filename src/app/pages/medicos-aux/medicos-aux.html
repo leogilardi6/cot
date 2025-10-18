@@ -1,0 +1,128 @@
+<section class="medicos-section">
+  <div class="medicos-container">
+    <h1>Nuestros Médicos</h1>
+    <div class="medicos-list">
+      @for (medico of medicos(); track medico.id) {
+        <div class="medico-row">
+          <mat-card class="medico-img-card">
+            <img [src]="medico.imagen" [alt]="medico.nombre" />
+          </mat-card>
+          <div class="medico-desc">
+            <div
+              [ngStyle]="{
+                'max-height': isExpanded(medico.id) ? 'none' : '400px',
+                overflow: isExpanded(medico.id) ? 'visible' : 'hidden',
+                'text-overflow': isExpanded(medico.id) ? 'unset' : 'ellipsis',
+                display: '-webkit-box',
+                '-webkit-line-clamp': isExpanded(medico.id) ? 'unset' : '12',
+                '-webkit-box-orient': 'vertical',
+              }"
+            >
+              <h2>{{ medico.titulo }} {{ medico.nombre }}</h2>
+              <h4>{{ medico.especialidad }}</h4>
+              <p>{{ medico.descripcion }}</p>
+
+              @if (medico['formacionAcademica']?.length) {
+                <div class="section-item">
+                  <h3>Formación Académica</h3>
+                  @for (item of medico['formacionAcademica']; track item.titulo) {
+                    <div>
+                      {{ item.titulo }}
+                      @if (item.institucion) {
+                        <span> - {{ item.institucion }}</span>
+                      }
+                      @if (item.rol) {
+                        <span> ({{ item.rol }})</span>
+                      }
+                      @if (item.facultad) {
+                        <span> - {{ item.facultad }}</span>
+                      }
+                      @if (item.matriculas) {
+                        <span>
+                          Matrícula Nacional: {{ item.matriculas.nacional }}, Provincial:
+                          {{ item.matriculas.provincial }}
+                        </span>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+              @if (medico['experiencia']?.length) {
+                <div class="section-item">
+                  <h3>Experiencia</h3>
+                  @for (exp of medico['experiencia']; track exp.rol) {
+                    <div>
+                      {{ exp.rol }}
+                      @if (exp.supervisor) {
+                        <span> - Supervisor: {{ exp.supervisor }}</span>
+                      }
+                      @if (exp.institucion) {
+                        <span> - {{ exp.institucion }}</span>
+                      }
+                      @if (exp.ubicacion) {
+                        <span> - {{ exp.ubicacion }}</span>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+              @if (medico['capacitaciones']?.length) {
+                <div class="section-item">
+                  <h3>Capacitaciones</h3>
+                  @for (cap of medico['capacitaciones']; track cap.titulo) {
+                    <div>
+                      {{ cap.titulo }}
+                      @if (cap.instructor) {
+                        <span> - Instructor: {{ cap.instructor }}</span>
+                      }
+                      @if (cap.institucion) {
+                        <span> - {{ cap.institucion }}</span>
+                      }
+                      @if (cap.duracion) {
+                        <span> - Duración: {{ cap.duracion }}</span>
+                      }
+                      @if (cap.ubicacion) {
+                        <span> - {{ cap.ubicacion }}</span>
+                      }
+                      @if (cap.fecha) {
+                        <span> - Fecha: {{ cap.fecha }}</span>
+                      }
+                      @if (cap.tipo) {
+                        <span> - Tipo: {{ cap.tipo }}</span>
+                      }
+                      @if (cap.categoria) {
+                        <span> - Categoría: {{ cap.categoria }}</span>
+                      }
+                      @if (cap.modalidad) {
+                        <span> - Modalidad: {{ cap.modalidad }}</span>
+                      }
+                      @if (cap.anio) {
+                        <span> - Año: {{ cap.anio }}</span>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+              @if (medico['especialidades']?.length) {
+                <div class="section-item">
+                  <h3>Especialidades</h3>
+                  @for (esp of medico['especialidades']; track esp) {
+                    <div>{{ esp }}</div>
+                  }
+                </div>
+              }
+            </div>
+            @if (!isExpanded(medico.id)) {
+              <button (click)="toggleExpand(medico.id)">Ver más</button>
+            }
+            @if (isExpanded(medico.id)) {
+              <button (click)="toggleExpand(medico.id)" style="background: #eee; color: #00417e">
+                Ver menos
+              </button>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

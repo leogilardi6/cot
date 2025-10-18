@@ -1,0 +1,113 @@
+.cot-info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  margin: 32px 0px;
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .cot-info-title {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+    }
+    .cot-info-description {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+  }
+  &__card {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cot-info-title {
+      padding-top: 30px;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      align-self: center;
+    }
+
+    .cot-info-description {
+      text-align: justify;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      padding: 0 30px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .cot-info-title {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+      }
+      .cot-info-description {
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cot-info-title {
+        font-size: 1.2rem;
+        line-height: 1.3;
+        margin-bottom: 20px;
+      }
+      .cot-info-description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cot-info-section {
+    gap: 16px;
+    margin: 32px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cot-info-section {
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 16px;
+  }
+  .cot-info-section__card,
+  .cot-info-section__text {
+    width: 90%;
+  }
+  .cot-info-section__card {
+    order: 1;
+  }
+  .cot-info-section__text {
+    order: 2;
+    padding: 0 8px;
+  }
+  .cot-info-title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .cot-info-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
