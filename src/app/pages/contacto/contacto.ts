@@ -39,11 +39,11 @@ export class Contacto {
     if (this.contactoForm.valid) {
       const { nombre, mensaje } = this.contactoForm.value;
       const texto = 'Consulta desde la web:%0A' + `Nombre: ${nombre}%0A` + `${mensaje}`;
-      window.open(`https://wa.me/5492914079520?text=${texto}`, '_blank');
+      window.open(`http://wa.me/5492914079520?text=${texto}`, '_blank');
     }
   }
 
   sacarTurno() {
-    window.open('https://paciente.sigemed.com.ar/portal/Cot', '_blank');
+    window.open('http://paciente.sigemed.com.ar/portal/Cot', '_blank');
   }
 }

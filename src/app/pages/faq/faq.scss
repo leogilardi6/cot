@@ -20,6 +20,19 @@
     border: none;
     background-color: transparent;
     border-radius: 0 !important;
+    @media screen and (max-width: 500px) {
+      min-height: 70px;
+      .mat-expansion-panel-header {
+        min-height: 70px;
+      }
+    }
+    @media screen and (max-width: 330px) {
+      height: fit-content;
+      .mat-expansion-panel-header {
+        height: fit-content;
+        margin: 8px 0;
+      }
+    }
   }
   .faq-section-title {
     margin-bottom: 16px;

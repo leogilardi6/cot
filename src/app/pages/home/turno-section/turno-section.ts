@@ -10,6 +10,6 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class TurnoSection {
   sacarTurno() {
-    window.open('https://paciente.sigemed.com.ar/portal/Cot', '_blank');
+    window.open('http://paciente.sigemed.com.ar/portal/Cot', '_blank');
   }
 }

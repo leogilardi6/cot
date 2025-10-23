@@ -27,7 +27,7 @@ export class Contactenos {
     web: {
       titulo: 'Web',
       texto: 'www.cotbahia.com.ar',
-      url: 'https://www.cotbahia.com.ar',
+      url: 'http://www.cotbahia.com.ar',
     },
   };
 }
