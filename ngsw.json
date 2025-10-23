@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1761226414402,
+  "timestamp": 1761226847911,
   "index": "https://leogilardi6.github.io/cot/index.html",
   "assetGroups": [
     {
@@ -11,6 +11,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://leogilardi6.github.io/cot/chunk-2M7JNCRY.js",
         "https://leogilardi6.github.io/cot/chunk-37AT7KK6.js",
         "https://leogilardi6.github.io/cot/chunk-7KVBUITO.js",
         "https://leogilardi6.github.io/cot/chunk-7RVZJ3PO.js",
@@ -26,7 +27,6 @@
         "https://leogilardi6.github.io/cot/chunk-K2P2O6DQ.js",
         "https://leogilardi6.github.io/cot/chunk-LJCXCE5K.js",
         "https://leogilardi6.github.io/cot/chunk-MKUABAEZ.js",
-        "https://leogilardi6.github.io/cot/chunk-OJLWNJAC.js",
         "https://leogilardi6.github.io/cot/chunk-R4LEO3UR.js",
         "https://leogilardi6.github.io/cot/chunk-S2GBNAZO.js",
         "https://leogilardi6.github.io/cot/chunk-SUBF5EP3.js",
@@ -35,7 +35,7 @@
         "https://leogilardi6.github.io/cot/chunk-WJIGSDNC.js",
         "https://leogilardi6.github.io/cot/chunk-XUMCQZBO.js",
         "https://leogilardi6.github.io/cot/index.html",
-        "https://leogilardi6.github.io/cot/main-L5B42WWG.js",
+        "https://leogilardi6.github.io/cot/main-JBKKMDAP.js",
         "https://leogilardi6.github.io/cot/manifest.webmanifest",
         "https://leogilardi6.github.io/cot/styles-HRSNGXG4.css"
       ],
@@ -167,6 +167,7 @@
     "https://leogilardi6.github.io/cot/assets/images/social/instagram-logo.png": "0fc8ab75bdbaa45148c1285f08af788ea3ad0506",
     "https://leogilardi6.github.io/cot/assets/images/social/instagram.png": "8986d6ceba3903a0a99cf9fdd85b66b8c1d06306",
     "https://leogilardi6.github.io/cot/assets/images/social/whatsapp.png": "93ec73678f70134f926edd7b5267760480296826",
+    "https://leogilardi6.github.io/cot/chunk-2M7JNCRY.js": "828c631032a65a3ac1978c762ce7d09bd5302cd9",
     "https://leogilardi6.github.io/cot/chunk-37AT7KK6.js": "7a31a96fcb334b9ec9ff8841390741b674b32b69",
     "https://leogilardi6.github.io/cot/chunk-7KVBUITO.js": "2bc0c71246630429842d9db33787beb5a6c8a71b",
     "https://leogilardi6.github.io/cot/chunk-7RVZJ3PO.js": "d1cf073526d95db96b48874d4e9b43779fd7a017",
@@ -182,7 +183,6 @@
     "https://leogilardi6.github.io/cot/chunk-K2P2O6DQ.js": "eff30bccb17c7a392125e9f790be41eea56a0082",
     "https://leogilardi6.github.io/cot/chunk-LJCXCE5K.js": "36c935425dab2449e80fbab0ea7c7b34c961889e",
     "https://leogilardi6.github.io/cot/chunk-MKUABAEZ.js": "d949af528124a4250de7dd2ca82529d7a46d062a",
-    "https://leogilardi6.github.io/cot/chunk-OJLWNJAC.js": "fa43e03ea1398cbbf104c85087df55bc6f045f5d",
     "https://leogilardi6.github.io/cot/chunk-R4LEO3UR.js": "f4440ab3f5dc1fdf2bf1bd74146eb4a43da78857",
     "https://leogilardi6.github.io/cot/chunk-S2GBNAZO.js": "2b0321f90d999b8051ec39d60a087bb998b11eac",
     "https://leogilardi6.github.io/cot/chunk-SUBF5EP3.js": "61ef2cf087d3ce17ce7c7bf448b5ddf90602c124",
@@ -200,8 +200,8 @@
     "https://leogilardi6.github.io/cot/icons/COT-512x512.png": "1769dd535ee1d0d19ecebc3bac6be2de4b5cef68",
     "https://leogilardi6.github.io/cot/icons/COT-72x72.png": "51e6d42487ca77a434b19738b54bcfcb0f630a3c",
     "https://leogilardi6.github.io/cot/icons/COT-96x96.png": "3cba6c98aec15d24f0eecee7bd754b7275aa5e4e",
-    "https://leogilardi6.github.io/cot/index.html": "21da51d62ba0a675f567630892f8441b312bf0a2",
-    "https://leogilardi6.github.io/cot/main-L5B42WWG.js": "1a6c5826e3d96865cc3dfb196922022523fa947f",
+    "https://leogilardi6.github.io/cot/index.html": "4c2f57847b0612a9dde04c94d95cd421bcc0cb1b",
+    "https://leogilardi6.github.io/cot/main-JBKKMDAP.js": "9d4aa37b91706309833a9e15b0002951454ebfc6",
     "https://leogilardi6.github.io/cot/manifest.webmanifest": "241501f8c71e33c2a4072488014bc81689afd843",
     "https://leogilardi6.github.io/cot/media/bg_ponted-KEG3U7GH.png": "981ab3f24229fc1bfb20e0fab31a127570276d80",
     "https://leogilardi6.github.io/cot/media/contactenos-EH2ZGUTI.png": "6a60a64d466c284c530e63d56ec7fd0c6011df46",
