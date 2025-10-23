@@ -142,6 +142,10 @@
     margin-bottom: 24px;
     align-self: start;
     color: #00417e;
+    @media screen and (max-width: 460px) {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
   }
   &__intro {
     font-size: 1rem;
