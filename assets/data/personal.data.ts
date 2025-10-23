@@ -38,7 +38,7 @@ export const MEDICOS_DATA = [
       'Con más de 30 años de experiencia en evaluación y tratamiento integral de la patología de cadera y rodilla. Tratamiento de lesiones por artrosis, osteonecrosis, osteocondritis y otras patologías articulares y musculoesqueléticas orientado a la Medicina Regenerativa utilizando Injerto Autólogo de Médula Ósea que contiene Células Madres y Factores de Crecimiento Plaquetarios.',
     redesSociales: {
       facebook: 'www.facebook.com/drmartinduhalde/',
-      instagram: 'https://www.instagram.com/dr.martinduhalde/',
+      instagram: 'http://www.instagram.com/dr.martinduhalde/',
     },
     imagen: 'assets/images/personal/martin-duhalde.jpg',
     activo: true,
@@ -106,7 +106,7 @@ export const MEDICOS_DATA = [
     ],
     especialidades: [],
     redesSociales: {
-      instagram: 'https://www.instagram.com/drlaureanomedina/',
+      instagram: 'http://www.instagram.com/drlaureanomedina/',
     },
     imagen: 'assets/images/personal/laureano-medina.jpg',
     activo: true,
@@ -144,8 +144,8 @@ export const MEDICOS_DATA = [
     ],
 
     redesSociales: {
-      facebook: 'https://www.facebook.com/p/Dra-Paula-Perez-61557703563594/',
-      instagram: 'https://www.instagram.com/dra.paulaperez/',
+      facebook: 'http://www.facebook.com/p/Dra-Paula-Perez-61557703563594/',
+      instagram: 'http://www.instagram.com/dra.paulaperez/',
     },
     imagen: 'assets/images/personal/paula-perez.jpg',
     activo: true,

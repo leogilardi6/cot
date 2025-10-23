@@ -5,12 +5,12 @@ export const FAQ = [
       {
         question: '¿Cómo reservo un turno?',
         answer:
-          'Podés elegir el canal que te resulte más cómodo:\n• Autogestión online: reservá tu turno desde la web en pocos pasos.  <a href="https://paciente.sigemed.com.ar/portal/Cot" target="_blank" rel="noopener"> Sacá tu turno aquí</a>\n• WhatsApp institucional: 291-4079520 (consultas y reservas). <a  href="https://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.\n• Presencial: en recepción, dentro del horario de atención.',
+          'Podés elegir el canal que te resulte más cómodo:\n• Autogestión online: reservá tu turno desde la web en pocos pasos.  <a href="http://paciente.sigemed.com.ar/portal/Cot" target="_blank" rel="noopener"> Sacá tu turno aquí</a>\n• WhatsApp institucional: 291-4079520 (consultas y reservas). <a  href="http://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.\n• Presencial: en recepción, dentro del horario de atención.',
       },
       {
         question: '¿Atienden con mi obra social o prepaga?',
         answer:
-          'Sí, trabajamos con la mayoría de las obras sociales y prepagas. Si tenés dudas, escribinos por WhatsApp y te orientamos antes de tu consulta. <a  href="https://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.',
+          'Sí, trabajamos con la mayoría de las obras sociales y prepagas. Si tenés dudas, escribinos por WhatsApp y te orientamos antes de tu consulta. <a  href="http://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.',
       },
       {
         question: '¿Cuánto tiempo de anticipación debo llegar antes de mi turno?',
@@ -25,7 +25,7 @@ export const FAQ = [
       {
         question: '¿Qué sucede si no puedo asistir al turno o lo quiero cambiar?',
         answer:
-          'Avisanos con tiempo por WhatsApp para reprogramar y liberar ese espacio para otro paciente. <a  href="https://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.',
+          'Avisanos con tiempo por WhatsApp para reprogramar y liberar ese espacio para otro paciente. <a  href="http://wa.me/5492914079520"   target="_blank" rel="noopener" title="Solicitar turno por WhatsApp">Escribinos por WhatsApp</a>.',
       },
     ],
   },
