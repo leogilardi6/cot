@@ -51,6 +51,9 @@
     }
     .action {
       margin-top: 12px;
+      .mdc-button__label {
+        font-size: 1.2rem;
+      }
     }
     &.light {
       background-color: var(--info-rapida-light);

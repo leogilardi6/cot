@@ -37,8 +37,8 @@ export class Contacto {
 
   abrirWhatsApp() {
     if (this.contactoForm.valid) {
-      const { nombre, email, telefono, mensaje } = this.contactoForm.value;
-      const texto = 'Consulta desde la web:%0A' + `Nombre: ${nombre}%0A` + `Mensaje: ${mensaje}`;
+      const { nombre, mensaje } = this.contactoForm.value;
+      const texto = 'Consulta desde la web:%0A' + `Nombre: ${nombre}%0A` + `${mensaje}`;
       window.open(`https://wa.me/5492914079520?text=${texto}`, '_blank');
     }
   }

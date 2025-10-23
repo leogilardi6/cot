@@ -1,14 +1,7 @@
 // ...existing code...
-@media screen and (max-width: 1024px) {
-  .personal-section {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
-}
+
 @media (max-width: 768px) {
   .personal-section {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
     .personal-list {
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -37,8 +30,6 @@
 }
 @media screen and (max-width: 550px) {
   .personal-section {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
     .personal-list {
       flex-direction: row !important;
       flex-wrap: wrap;
@@ -63,16 +54,14 @@
   background: var(--background-card);
 }
 .personal-section {
-  padding: 48px 0;
-  max-width: 1000px;
-  justify-self: center;
   h1 {
     margin-bottom: 32px;
     text-align: start;
   }
   .title-section p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
     text-align: justify;
-    line-height: 1.6;
     margin-bottom: 1.2rem;
   }
   h2 {
@@ -81,7 +70,8 @@
   }
 
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     color: var(--gray-light);
     margin-bottom: 16px;
     text-align: justify;

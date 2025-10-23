@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 
@@ -7,5 +7,6 @@ import { RouterModule } from '@angular/router';
   imports: [MatButtonModule, RouterModule],
   templateUrl: './info-rapida.html',
   styleUrl: './info-rapida.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class InfoRapida {}

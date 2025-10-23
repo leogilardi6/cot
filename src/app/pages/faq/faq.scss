@@ -1,0 +1,36 @@
+.faq-section {
+  p {
+    white-space: pre-line;
+  }
+  a {
+    text-decoration: none;
+    color: var(--blue-accent);
+    &:hover {
+      text-shadow: 1px 0 0 currentColor;
+    }
+  }
+  strong {
+    color: var(--blue-accent);
+  }
+  .title {
+    margin-bottom: 32px;
+  }
+  .mat-accordion .mat-expansion-panel {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 0 !important;
+  }
+  .faq-section-title {
+    margin-bottom: 16px;
+  }
+  .faq-intro {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .faq-seccion {
+    margin-bottom: 16px;
+  }
+}

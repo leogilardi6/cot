@@ -1,19 +1,11 @@
 .institucional-container {
-  max-width: 1000px;
-  justify-self: center;
-  padding: 50px 0;
-  @media screen and (max-width: 1024px) {
-    padding: 36px 24px;
-  }
-  @media screen and (max-width: 768px) {
-    padding: 24px 16px;
-  }
   .title {
     margin-bottom: 30px;
   }
   .content {
-    font-size: 1rem;
-    line-height: 1.3rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    text-align: justify;
     .image {
       display: flex;
       justify-content: center;

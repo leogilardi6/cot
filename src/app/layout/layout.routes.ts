@@ -30,6 +30,10 @@ export const LayoutRoutes: Routes = [
     loadComponent: () => import('../pages/servicios/servicios').then((m) => m.Servicios),
   },
   {
+    path: 'preguntas_frecuentes',
+    loadComponent: () => import('../pages/faq/faq').then((m) => m.Faq),
+  },
+  {
     path: 'especialidades',
     loadComponent: () => import('../pages/patologias/patologias').then((m) => m.Patologias),
   },

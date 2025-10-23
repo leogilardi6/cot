@@ -1,0 +1,33 @@
+<section class="faq-section page-container">
+  <h1 class="cot-title with-shadow title">Preguntas Frecuentes</h1>
+  <div class="faq-intro">
+    Aquí encontrarás respuestas a las dudas más comunes sobre turnos, coberturas, atención médica,
+    cirugías, rehabilitación y otros aspectos prácticos de nuestros servicios. Si tu consulta no
+    está aquí, no dudes en contactarnos.
+    <br />
+    <a
+      href="https://wa.me/5492914079520"
+      target="_blank"
+      rel="noopener"
+      title="Solicitar turno por WhatsApp"
+      >Escribinos por WhatsApp si tenes alguna duda</a
+    >.
+  </div>
+  @for (section of faqList; track section) {
+    <div class="faq-seccion">
+      <h2 class="faq-section-title cot-title with-shadow">{{ section.section }}</h2>
+      <mat-accordion [hideToggle]="true">
+        @for (item of section.items; track item) {
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="cot-title with-shadow">
+                {{ item.question }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p [innerHTML]="item.answer"></p>
+          </mat-expansion-panel>
+        }
+      </mat-accordion>
+    </div>
+  }
+</section>

@@ -85,7 +85,7 @@ body {
 }
 
 .cot-title {
-  color: var(--title-color);
+  color: var(--title-color) !important;
 }
 
 h1 {
@@ -104,4 +104,25 @@ h1 {
   z-index: -1;
   pointer-events: none;
   opacity: 0.7;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 48px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .page-container {
+    margin: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-container {
+    margin: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .page-container {
+    margin: 16px;
+  }
 }

@@ -1,6 +1,10 @@
 @let patologia = selectedPatologiaRel();
 @if (patologia) {
-  <div class="patologia-container no-select">
+  <div class="patologia-container no-select page-container">
+    <button matButton routerLink="/especialidades">
+      <mat-icon>arrow_back</mat-icon>
+      Volver a Especialidades
+    </button>
     <header class="patologia-header">
       <h1 class="cot-title with-shadow">{{ patologia!.titulo }}</h1>
       <p class="introduccion">{{ patologia!.introduccion }}</p>

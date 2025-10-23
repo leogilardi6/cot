@@ -1,25 +1,47 @@
-<div class="patologias-container no-select">
-  <h1 class="with-shadow cot-title">Patologías</h1>
-  @for (patologia of patologias; track patologia.id) {
-    <section class="patologia-section" id="{{ patologia.id }}">
-      <div class="patologia-header">
-        <div class="patologia-header__text">
-          <h2 class="patologia-title with-shadow">{{ patologia.grupo }}</h2>
+<div class="patologias-container no-select page-container">
+  <h1 class="with-shadow cot-title title">Especialidades y Servicios</h1>
+  <div class="patologias-intro">
+    En COT Bahía Blanca ofrecemos un abordaje integral de las patologías traumatológicas y
+    ortopédicas, cubriendo las principales subespecialidades con un equipo de profesionales
+    altamente capacitados.<br />
+    <br />
+    Nuestro objetivo es brindar diagnósticos precisos, tratamientos seguros y planes de recuperación
+    eficaces para que cada paciente pueda volver a moverse con confianza.<br />
+    <br />
+    <h2 class="with-shadow cot-title subtitle">Nuestras áreas de especialidad incluyen</h2>
+    @for (patologia of patologias; track patologia.id) {
+      <section class="patologia-section" id="{{ patologia.id }}">
+        <div class="patologia-header">
+          <div class="patologia-header__text">
+            <h2 class="patologia-title with-shadow">{{ patologia.grupo }}</h2>
+          </div>
         </div>
-      </div>
-      @if (patologia.subsecciones) {
-        <div class="patologia-content">
-          @for (subseccion of patologia.subsecciones; track subseccion.titulo) {
-            <mat-card class="subseccion-card" (click)="navigate(patologia.id, subseccion.id)">
-              <mat-card-header>
-                <mat-card-title class="subseccion-title with-shadow">{{
-                  subseccion.titulo
-                }}</mat-card-title>
-              </mat-card-header>
-            </mat-card>
-          }
-        </div>
-      }
-    </section>
-  }
+        @if (patologia.subsecciones) {
+          <div class="patologia-content">
+            @for (subseccion of patologia.subsecciones; track subseccion.titulo) {
+              <mat-card class="subseccion-card" (click)="navigate(patologia.id, subseccion.id)">
+                <mat-card-header>
+                  <mat-card-title class="subseccion-title with-shadow">{{
+                    subseccion.titulo
+                  }}</mat-card-title>
+                </mat-card-header>
+              </mat-card>
+            }
+          </div>
+        }
+      </section>
+    }
+
+    <br />
+    <h2 class="with-shadow cot-title subtitle">Servicios complementarios</h2>
+
+    <div class="servicio cot-title with-shadow">Kinesiología y rehabilitación funcional</div>
+    <div class="servicio cot-title with-shadow">Radiología y diagnóstico por imágenes</div>
+    <div class="servicio cot-title with-shadow">Terapias regenerativas (PRP y células madre)</div>
+    <div class="servicio cot-title with-shadow">Cirugía ortopédica y mínimamente invasiva</div>
+    <div class="servicio cot-title with-shadow">Programas de recuperación personalizados</div>
+    <br />
+    En COT entendemos que cada paciente es único, por eso diseñamos estrategias de tratamiento a
+    medida, combinando conocimiento médico, tecnología de avanzada y un enfoque humano.
+  </div>
 </div>

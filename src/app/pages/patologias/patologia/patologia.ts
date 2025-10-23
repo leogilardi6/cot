@@ -1,12 +1,15 @@
 import { Component, inject, signal, computed } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { PATOLOGIAS_DATA } from '../../../../assets/data/patologias.data';
 import { IPatologia, IPatologiaRel } from '../../../../assets/interfaces/patologias';
+import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-patologia',
   templateUrl: './patologia.html',
   styleUrl: './patologia.scss',
+  imports: [RouterModule, MatButton, MatIcon],
 })
 export class Patologia {
   selectedPatologia = signal<IPatologia | undefined>(undefined);
@@ -36,4 +39,6 @@ export class Patologia {
       this.selectedSeccion.set(seccion || '');
     });
   }
+
+  volver() {}
 }
