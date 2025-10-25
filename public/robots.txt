@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+Sitemap: https://cotbahiablanca.com.ar/sitemap.xml
+Sitemap: https://cotbahiablanca.com/sitemap.xml
+
