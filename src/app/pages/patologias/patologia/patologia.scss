@@ -7,13 +7,33 @@
   }
   .introduccion,
   .contenido {
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 1rem;
     margin-bottom: 1.2rem;
   }
   .patologia-info {
     display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+      .patologia {
+        &-content {
+          width: 100% !important;
+        }
+        &-image {
+          align-self: center;
+          display: flex;
+          padding-left: 0 !important;
+          width: 100% !important;
+          .imagenes-container {
+            flex-direction: row !important;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100% !important;
+            .patologia-img {
+              max-width: 250px;
+            }
+          }
+        }
+      }
+    }
     .patologia-content {
       display: flex;
       flex-direction: column;

@@ -27,12 +27,12 @@
         />
       </div>
     </div>
-    <div class="medico-container-flex">
+    <div class="medico-container-flex page-container">
       <button matButton routerLink="/personal">
         <mat-icon>arrow_back</mat-icon>
         Volver a Personal
       </button>
-      <div class="medico-info">
+      <div class="medico-info content-font">
         @if (medico.presentacion) {
           <div class="medico-detail">
             <div class="descripcion" [innerHTML]="medico.presentacion"></div>

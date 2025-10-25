@@ -13,7 +13,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   min-height: 720px;
 
   .medico-header-flex {
@@ -79,10 +78,9 @@
 
   .medico-container-flex {
     display: flex;
-    gap: 2rem;
     align-items: flex-start;
     width: 80%;
-    padding-left: 10%;
+    flex-direction: column;
 
     .medico-info {
       flex: 2;
@@ -120,9 +118,6 @@
   }
 
   @media (max-width: 900px) {
-    .medico-container-flex {
-      padding-left: 24px;
-    }
     .medico-header-flex {
       flex-direction: column-reverse;
       align-items: center;
@@ -136,12 +131,6 @@
         width: 200px;
         height: 200px;
       }
-    }
-
-    .medico-container-flex {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
     }
   }
 }

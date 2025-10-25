@@ -7,13 +7,13 @@
     </button>
     <header class="patologia-header">
       <h1 class="cot-title with-shadow">{{ patologia!.titulo }}</h1>
-      <p class="introduccion">{{ patologia!.introduccion }}</p>
+      <p class="introduccion content-font">{{ patologia!.introduccion }}</p>
     </header>
-    <div class="patologia-info">
+    <div class="patologia-info content-font">
       <div class="patologia-content">
         <section class="seccion">
           <h2 class="cot-title with-shadow">{{ patologia!.secciones.descripcion.titulo }}</h2>
-          <p class="descripcion-seccion">
+          <p class="descripcion-seccion content-font">
             {{ patologia!.secciones.descripcion.descripcion }}
           </p>
           <div class="contenido">{{ patologia!.secciones.descripcion.contenido }}</div>
@@ -21,7 +21,7 @@
 
         <section class="seccion">
           <h2 class="cot-title with-shadow">{{ patologia!.secciones.sintomas.titulo }}</h2>
-          <p class="descripcion-seccion">
+          <p class="descripcion-seccion content-font">
             {{ patologia!.secciones.sintomas.descripcion }}
           </p>
           <div class="contenido">{{ patologia!.secciones.sintomas.contenido }}</div>
@@ -91,17 +91,15 @@
       </div>
       <div class="patologia-image">
         @if (patologia!.imagenes && patologia!.imagenes.length) {
-          <section class="seccion">
-            <div class="imagenes-container">
-              @for (img of patologia!.imagenes; track img) {
-                <img
-                  [src]="img"
-                  alt="Imagen relacionada con {{ patologia!.titulo }}"
-                  class="patologia-img"
-                />
-              }
-            </div>
-          </section>
+          <div class="imagenes-container">
+            @for (img of patologia!.imagenes; track img) {
+              <img
+                [src]="img"
+                alt="Imagen relacionada con {{ patologia!.titulo }}"
+                class="patologia-img"
+              />
+            }
+          </div>
         }
       </div>
     </div>
